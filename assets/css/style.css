@@ -1,0 +1,70 @@
+@import url(./globals.css);
+
+/* Componente NavBar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.list-left, .list-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: var(--secondary-border-color);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+.button-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 5%;
+    border: none;
+    background-color: var(--primary-border-color);
+}
+
+.icon-nav:hover, .button-nav:hover {
+    transform: scale(1.1);
+}
+
+.list-left > * {
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+.list-left li p:hover {
+    color: var(--text-alternative);
+}
+
+.list-right > *:not(:last-child) {
+    margin-right: 1.8rem;
+    cursor: pointer;
+}
+
+/* Componente Slider */
+
+.section-slider {
+    display: flex;
+    width: 100%;
+}
+
+.section-slider img {
+    width: 100%;
+}
