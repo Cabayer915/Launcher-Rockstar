@@ -40,6 +40,11 @@
     background-color: var(--primary-border-color);
 }
 
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .icon-nav:hover, .button-nav:hover {
     transform: scale(1.1);
 }
@@ -119,10 +124,13 @@
     padding: 3rem 0 3rem 0;
 }
 
-/* .game-box-listener > *:not(:last-child) {
-    padding-right: 4rem;
-} */
-
 .game-box-img {
-    background-color: aqua;
+    width: 250px;
+    height: 310px;
+}
+
+.game-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
