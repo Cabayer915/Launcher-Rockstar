@@ -130,7 +130,94 @@
 }
 
 .game-img {
+    border-radius: 6px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Componente News */
+
+.section-news {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.section-news h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+.news-box {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.card-news-main {
+    width: 900px;
+    border-radius: 10px;
+    height: fit-content;
+    background-color: var(--secondary-bg-color);
+}
+
+.card-news-main img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-news-main .text-news {
+    padding: 1rem 0 0 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.card-news-main h2 {
+    padding: 0 0 1rem 1rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: var(--text-alternative);
+}
+
+.cards-news {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-news {
+    width: 350px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+}
+
+.card-news:not(:last-child) {
+    margin-bottom: 1.4rem;
+}
+
+.card-news img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-news h2 {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.card-news h3 {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: var(--text-alternative);
 }
