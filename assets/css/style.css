@@ -8,8 +8,10 @@
     align-items: center;
     flex-direction: row;
     padding: 2rem;
-    margin-left: 8%;
-    margin-right: 8%;
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 
 .list-left, .list-right {
@@ -17,6 +19,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.list-left {
+    margin-left: 8%;
+}
+
+.list-right {
+    margin-right: 8%;
 }
 
 .icon-nav {
@@ -66,6 +76,7 @@
 /* Componente Slider */
 
 .section-slider {
+    padding-top: 8rem;
     display: flex;
     width: 100%;
 }
@@ -195,10 +206,6 @@
     width: 350px;
     background-color: var(--secondary-bg-color);
     border-radius: 10px;
-}
-
-.card-news:not(:last-child) {
-    margin-bottom: 1.4rem;
 }
 
 .card-news img {
